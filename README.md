@@ -127,6 +127,15 @@ PONG
 ```
 
 ---
+### Idle Timeout
+If a connected user remains inactive for 60 seconds, the server will automatically disconnect the client.
+
+The remaining users are notified with:
+```
+INFO <username> disconnected
+
+```
+This helps prevent idle connections from staying open indefinitely.
 
 ## Example Chat Session
 
@@ -167,7 +176,7 @@ INFO Naman disconnected
 - WHO command (list active users)
 - DM command (private messaging)
 - PING / PONG heartbeat
-
+- Idle Timeout
 ---
 
 ## Screen Recording
@@ -176,7 +185,7 @@ A short screen recording (1–2 minutes) demonstrates:
 - Two clients connecting
 - Live message exchange
 - Client disconnect handling
-
+- link: https://drive.google.com/file/d/1qb8MnsnVFKr-y_LZlixqBBDEUrS3vXXJ/view?usp=sharing
 ---
 
 ## Notes
